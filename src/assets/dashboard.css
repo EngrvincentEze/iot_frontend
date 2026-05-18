@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard-container{
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+/* Main content */
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+/* Logout button */
+.logout{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+
+    background-color: rgb(221, 4, 4);
+    color: white;
+
+    border-radius: 0.7rem;
+    cursor: pointer;
+    border: none;
+}
+
+.logout:focus{
+    opacity: 0.6;
+}
+
+/* Status text */
+.text-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    text-align: center;
+}
+
+.text-div h2{
+    font-size: 2rem;
+}
+
+.text-div p{
+    margin-top: 1rem;
+    font-size: 5rem;
+    color: rgb(237, 222, 5);
+}
+
+/* Button section */
+.btn-div{
+    display: flex;
+    gap: 2rem;
+
+    margin-top: 4rem;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Buttons */
+.btn-div button{
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-div button:focus{
+    opacity: 0.6;
+}
+
+.on_btn{
+    background-color: rgb(74, 131, 74);
+    color: white;
+}
+
+.off_btn{
+    background-color: rgb(203, 64, 64);
+    color: white;
+}
+
+/* Tablet mediq query*/
+@media screen and (max-width: 768px){
+
+    .text-div h2{
+        font-size: 1.5rem;
+    }
+
+    .text-div p{
+        font-size: 3.5rem;
+    }
+
+    .btn-div button{
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+}
+
+/* Mobile media query*/
+@media screen and (max-width: 480px){
+
+    .logout{
+        font-size: 0.9rem;
+        padding: 0.5rem 0.8rem;
+    }
+
+    .text-div h2{
+        font-size: 1.2rem;
+        margin-top: 4rem;
+    }
+
+    .text-div p{
+        font-size: 2.5rem;
+    }
+
+    .btn-div{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .btn-div button{
+        width: 80%;
+        font-size: 1rem;
+    }
+
+}

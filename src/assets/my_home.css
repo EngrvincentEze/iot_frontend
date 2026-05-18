@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url("./futuristic-abstract-digital-tech-circuit-mesh-background-design_1017-59214.avif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.home-container{
+    width: 90%;
+    max-width: 900px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    text-align: center;
+}
+
+.home-image{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1000;
+}
+.home-image img{
+    width: 8rem;
+    height: 6rem;
+}
+
+.home-container h3{
+    font-size: 3rem;
+    color: white;
+    margin-top: 6rem;
+}
+
+.home-form-div{
+    margin-top: 5rem;
+}
+
+.home-form-div button{
+    width: 14rem;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.home-form-div button:hover{
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+/* Tablets */
+
+@media screen and (max-width: 768px){
+
+    .home-container h3{
+        font-size: 2rem;
+    }
+
+    .home-image img{
+        width: 6rem;
+        height: 4rem;
+    }
+
+    .home-form-div button{
+        width: 10rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+/* Mobile phone */
+
+@media screen and (max-width: 480px){
+
+    .home-container h3{
+        font-size: 1.3rem;
+        margin-top: 5rem;
+    }
+
+    .home-image{
+        left: 0.5rem;
+        top: 0.5rem;
+    }
+
+    .home-image img{
+        width: 4rem;
+        height: 3rem;
+    }
+
+    .home-form-div{
+        margin-top: 3rem;
+    }
+
+    .home-form-div button{
+        width: 8rem;
+        font-size: 1rem;
+        padding: 0.7rem;
+        border-radius: 0.5rem;
+    }
+
+}

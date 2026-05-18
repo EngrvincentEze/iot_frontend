@@ -1,0 +1,136 @@
+body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-main-div{
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background: url("../../public/360_F_868510427_vsvN67LV1zSmLMyXMOFG05tRCmTAj1xL.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Home button */
+.home_btn{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  font-size: 1.1rem;
+  padding: 0.6rem 1rem;
+
+  background-color: rgba(205, 13, 13, 0.855);
+  color: white;
+
+  border-radius: 0.7rem;
+  cursor: pointer;
+  border: none;
+}
+
+.home_btn:focus{
+  opacity: 0.6;
+}
+
+/* Login card */
+.signin-container{
+  width: 90%;
+  max-width: 350px;
+
+  padding: 2rem;
+
+  border-radius: 1rem;
+  box-shadow: 0 0 10px #ccc;
+
+  background-color: rgb(2, 12, 21);
+}
+
+/* Title */
+.admin-signin-title{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+.signin-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.signin-container input{
+  padding: 0.9rem;
+  font-size: 1rem;
+
+  border-radius: 7px;
+  border: none;
+  outline: none;
+}
+
+/* Button */
+.signin-container button{
+  padding: 0.9rem;
+  cursor: pointer;
+
+  font-size: 1.2rem;
+  border-radius: 1rem;
+
+  background-color: rgb(177, 71, 25);
+  color: white;
+
+  border: none;
+}
+
+/* Error messages */
+.signin-container p{
+  color: white;
+  margin-top: -10px;
+  margin-bottom: 7px;
+  font-size: 0.9rem;
+}
+
+/*Mobile media query*/
+@media screen and (max-width: 480px){
+
+  .home_btn{
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .admin-signup{
+    font-size: 1.5rem;
+  }
+
+  .signin-container{
+    padding: 1.5rem;
+  }
+
+  .signin-container button{
+    font-size: 1rem;
+  }
+
+  .signin-container{
+  width: 50%;
+  max-width: 350px;
+}
+
+.admin-signin-title{
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+}

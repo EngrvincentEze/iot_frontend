@@ -1,0 +1,29 @@
+div{
+    margin: 8rem 18rem;
+    display: flex;
+    gap: 2rem;
+}
+button{
+    padding: 2rem 1.2rem;
+    font-size: 2rem;
+}
+
+.on_btn{
+    background-color: rgb(26, 189, 26);
+    color: white;
+}
+button:focus{
+    background-color: rgb(85, 85, 201);
+    color: white;
+}
+.off_btn{
+    background-color: rgb(236, 53, 53);
+    color: white;
+}
+h2{
+    display: block;
+    margin-top: -16rem;
+}
+.status{
+    color: orange;
+}

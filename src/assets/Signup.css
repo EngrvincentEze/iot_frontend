@@ -1,0 +1,50 @@
+.sign-up-main-div{
+  background: url("../../public//abstract-digital-technology-geometric-background-web-cyber-innovation_1017-49517.avif");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.signup-container{
+  width: 320px;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+  background-color: rgb(136, 18, 18);
+
+}
+.admin-signup{
+  margin-left: 5rem;
+  padding-bottom: 1rem;
+  font-size: 1.6rem;
+  color: white;
+}
+.signup-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.signup-container input{
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 7px;
+}
+
+.signup-container button{
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  background-color: rgb(177, 71, 25);
+  color: white;
+}
+
+.signup-container p{
+  color: white;
+  margin-top: -10px;
+  margin-bottom: 7px;
+  font-size: 18px;
+}
