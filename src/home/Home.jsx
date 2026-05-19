@@ -2,7 +2,7 @@ import React from 'react'
 import "../assets/my_home.css"
 import {Link} from "react-router-dom"
 import Image1 from "../../public/images (tropical).jpg"
-import bgImage from "../../public/futuristic-abstract-digital-tech-circuit-mesh-background-design_1017-59214.avif"
+import bgImage from "../assets/futuristic-abstract-digital-tech-circuit-mesh-background-design_1017-59214.avif"
 
 const Home = () => {
   return (
