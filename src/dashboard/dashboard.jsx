@@ -3,7 +3,7 @@ import "../assets/dashboard.css";
 import {Link} from "react-router-dom"
 
 const Dashboard = () => {
-  const [currentCommand, setCurrentCommand] = useState("OFF");
+  const [currentCommand, setCurrentCommand] = useState("ON");
 
   // =========================
   // SEND COMMAND
