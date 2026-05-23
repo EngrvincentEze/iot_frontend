@@ -3,7 +3,8 @@ import "../assets/dashboard.css";
 import {Link} from "react-router-dom"
 
 const Dashboard = () => {
-  const [currentCommand, setCurrentCommand] = useState("ON");
+  const [currentCommand, setCurrentCommand] = useState("OFF");
+  const [deviceStatus, setDeviceStatus] = useState("OFFLINE");
 
   // =========================
   // SEND COMMAND
@@ -29,6 +30,24 @@ const Dashboard = () => {
     }
   };
 
+  const getDeviceStatus = async () => {
+
+    try {
+
+      const response = await fetch(
+        "https://iot-backend-ksmm.onrender.com/api/device/status"
+      );
+
+      const data = await response.json();
+      setDeviceStatus(data.status);
+
+    } catch (error) {
+
+      console.log(error);
+
+      setDeviceStatus("OFFLINE");
+    }
+  };
   // =========================
   // FETCH LATEST COMMAND
   // =========================
@@ -65,30 +84,10 @@ const Dashboard = () => {
 
   //this is the new guy
 
-  const [deviceStatus, setDeviceStatus] = useState("OFFLINE");
-
   // =========================
   // FETCH ESP32 STATUS
   // =========================
-  const getDeviceStatus = async () => {
-
-    try {
-
-      const response = await fetch(
-        "https://iot-backend-ksmm.onrender.com/api/device/status"
-      );
-
-      const data = await response.json();
-
-      setDeviceStatus(data.status);
-
-    } catch (error) {
-
-      console.log(error);
-
-      setDeviceStatus("OFFLINE");
-    }
-  };
+  
 
   // =========================
   // CHECK STATUS EVERY 5 SEC
@@ -107,6 +106,9 @@ const Dashboard = () => {
 
   }, []);
 
+
+
+
   return (
     <div className="dashboard-container">
    <Link to= "/login">
@@ -117,7 +119,9 @@ const Dashboard = () => {
 
       <div className="text-div">
         <h2>Electric Fence Status:</h2>
-        <p>{currentCommand}</p>
+        <p>{
+          deviceStatus == "ONLINE" ? currentCommand : "ON"
+        }</p>
 
          <h2>
         ESP32 Status:
